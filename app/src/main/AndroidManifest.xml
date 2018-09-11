@@ -14,15 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".firebase.MyFirebaseMessagingService"
             tools:ignore="ExportedService">
@@ -36,6 +37,10 @@
             </intent-filter>
         </service>
 
+        <activity
+            android:name=".sample.sample"
+            android:label="@string/title_activity_sample"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
