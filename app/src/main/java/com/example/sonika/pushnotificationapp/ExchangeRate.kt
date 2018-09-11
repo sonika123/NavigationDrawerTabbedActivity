@@ -56,10 +56,4 @@ class LastWeekRate {
     var rate: String? = null
 }
 
-class Item(var type: LayoutType?) {
-    enum class LayoutType {
-        LAYOUT_ONE, LAYOUT_TWO
-    }
-}
-
 

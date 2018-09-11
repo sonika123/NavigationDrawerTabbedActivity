@@ -14,11 +14,6 @@ class MyAdapter(var exchageRateList: List<ExchangeRate>) :
 
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-//        when(holder.itemViewType)
-//        {
-//            LAYOUT_TYPE_ONE -> initLayoutOne(holder as MyViewHolder, position)
-//            LAYOUT_TYPE_TWO-> initLayoutTwo(holder as MyViewHolder2, position)
-//        }
         if (holder.itemViewType.equals(LAYOUT_TYPE_ONE)) {
             return (holder as MyViewHolder).bind(exchageRateList[position])
         } else if (holder.itemViewType.equals(LAYOUT_TYPE_TWO)) {

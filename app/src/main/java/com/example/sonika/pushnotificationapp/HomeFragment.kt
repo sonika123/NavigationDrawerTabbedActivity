@@ -12,19 +12,19 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sonika.pushnotificationapp.ApiInterface.Companion.retrofit
-import kotlinx.android.synthetic.main.fragment_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
-class MainFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     val exchangeRateList: ArrayList<ExchangeRate> = arrayListOf()
     lateinit var mAdapter: MyAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_main, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
         return view;
 
     }
@@ -78,7 +78,7 @@ class MainFragment : Fragment() {
 
         mAdapter.notifyDataSetChanged()
 //                    val list= responseString!!.map { it.Text }
-//                    spinner_occupation.adapter =  ArrayAdapter<String>(this@MainActivity,
+//                    spinner_occupation.adapter =  ArrayAdapter<String>(this@HomeActivity,
 //                            android.R.layout.simple_spinzner_dropdown_item, list)
 
     }

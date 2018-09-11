@@ -14,7 +14,7 @@ import android.graphics.BitmapFactory
 import androidx.core.content.ContextCompat
 import java.net.HttpURLConnection
 import java.net.URL
-import com.example.sonika.pushnotificationapp.MainActivity
+import com.example.sonika.pushnotificationapp.HomeActivity
 import com.example.sonika.pushnotificationapp.R
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
@@ -57,7 +57,7 @@ internal class MyFirebaseMessagingService : FirebaseMessagingService()
 //        val intent: Intent
 //        val resultIntent: PendingIntent
 
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 
         val resultIntent = PendingIntent.getActivity(this, 0,
@@ -127,7 +127,7 @@ internal class MyFirebaseMessagingService : FirebaseMessagingService()
 
 
 
-//        val intent = Intent(this, MainActivity::class.java)
+//        val intent = Intent(this, HomeActivity::class.java)
 //        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
 //
 //        val pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
