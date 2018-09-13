@@ -1,13 +1,12 @@
-package com.example.sonika.pushnotificationapp
+package com.example.sonika.pushnotificationapp.utils
 
+import com.example.sonika.pushnotificationapp.model.ExchangeRate
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
-import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
-import java.util.*
 
 interface ApiInterface {
 
@@ -31,10 +30,7 @@ interface ApiInterface {
                         httpClient.build()
                 )
                 .build()
-
-        var client = retrofit.create<ApiInterface>(ApiInterface::class.java)
     }
-
 
 
 }

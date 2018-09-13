@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tabLayout.Tab1">
+    tools:context=".views.tab1.Tab1Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello tab 1 here"
+       style="@style/MatchHeightMatchWidth"
+        android:text="@string/push_notification_tab1"
         android:textStyle="bold"
         android:gravity="center_vertical"
         />

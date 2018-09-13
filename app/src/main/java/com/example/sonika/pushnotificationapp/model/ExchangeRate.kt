@@ -1,14 +1,7 @@
-package com.example.sonika.pushnotificationapp
+package com.example.sonika.pushnotificationapp.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-
-
-
-
-
-
-
 
 
 class ExchangeRate {

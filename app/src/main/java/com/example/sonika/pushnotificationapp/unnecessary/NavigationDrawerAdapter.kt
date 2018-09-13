@@ -1,4 +1,4 @@
-package com.example.sonika.pushnotificationapp.drawer
+package com.example.sonika.pushnotificationapp.unnecessary
 
 import android.view.LayoutInflater
 import android.view.View
@@ -33,7 +33,5 @@ class NavigationDrawerAdapter(private val navItems: ArrayList<MainMenu>,
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as DataViewHolder).bind(navItems[position], itemSelectListener, position)
     }
-
-//    var mNavMenuClickListener: NavMenuClickListener? = null
 }
 

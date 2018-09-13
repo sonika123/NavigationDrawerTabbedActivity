@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchHeightMatchWidthVertical"
+    android:background="#ffffff">
 
     <LinearLayout
         android:id="@+id/headerLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        style="@style/WrapHeightMatchWidth">
 
         <include
-            layout="@layout/navigation_header_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            style="@style/WrapHeightMatchWidth"
+            layout="@layout/navigation_header_layout" />
     </LinearLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/headerLayout"
-        />
+        style="@style/MatchHeightMatchWidth"
+        android:layout_below="@id/headerLayout" />
 
 </RelativeLayout>

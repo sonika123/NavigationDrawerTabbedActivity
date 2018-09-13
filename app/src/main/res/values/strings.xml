@@ -21,4 +21,10 @@
     <string name="good_morning">Good Morning</string>
     <string name="sonika_maharjan">Sonika Maharjan</string>
     <string name="logout">Logout</string>
+    <string name="push_notification_tab1">Push Notification Tab1</string>
+    <string name="hello_tab_2_here">hello tab 2 here!!</string>
+    <string name="hello_tab_3_here">hello tab 3 here</string>
+    <string name="country_name">Country name</string>
+    <string name="items_of_row">Items of Row</string>
+    <string name="flag_here">flag here</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.sonika.pushnotificationapp.drawer
+package com.example.sonika.pushnotificationapp.unnecessary
 
 interface NavigationDrawerCallbacks {
     fun onNavigationDrawerItemSelected(position: Int?)

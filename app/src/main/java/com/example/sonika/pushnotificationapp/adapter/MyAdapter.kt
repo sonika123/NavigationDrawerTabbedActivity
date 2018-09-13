@@ -1,9 +1,11 @@
-package com.example.sonika.pushnotificationapp
+package com.example.sonika.pushnotificationapp.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sonika.pushnotificationapp.model.ExchangeRate
+import com.example.sonika.pushnotificationapp.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_item_adapter_1.view.*
 
@@ -36,7 +38,6 @@ class MyAdapter(var exchageRateList: List<ExchangeRate>) :
         }
     }
 
-
     override fun getItemCount(): Int = exchageRateList.size
 
     override fun getItemViewType(position: Int): Int {
@@ -48,12 +49,9 @@ class MyAdapter(var exchageRateList: List<ExchangeRate>) :
         }
     }
 
-
     class MyViewHolder2(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind() {
-
-
-            //itemView.grey_line
+//            itemView.grey_line
         }
     }
 

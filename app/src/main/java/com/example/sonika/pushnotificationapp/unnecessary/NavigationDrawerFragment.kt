@@ -1,4 +1,4 @@
-package com.example.sonika.pushnotificationapp.drawer
+package com.example.sonika.pushnotificationapp.unnecessary
 
 import android.content.Context
 import android.os.Bundle
@@ -35,7 +35,6 @@ class NavigationDrawerFragment : Fragment() {
             mCallbacks = mContext as NavigationDrawerCallbacks?
         } catch (e: ClassCastException) {
             e.printStackTrace()
-            //throw ClassCastException("Activity must implement NavigationDrawerCallbacks.")
         }
 
     }

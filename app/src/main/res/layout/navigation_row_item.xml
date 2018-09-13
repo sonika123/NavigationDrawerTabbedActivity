@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WrapHeightMatchWidthHorizontal"
     android:padding="16dp"
     android:paddingTop="8dp"
+    android:gravity="center_vertical"
     android:paddingBottom="8dp"
-    android:layout_height="wrap_content">
+    tools:ignore="UseCompoundDrawables">
+
     <ImageView
         android:id="@+id/navigationImageView"
-        android:src="@color/colorAccent"
         android:layout_width="40dp"
-        android:layout_height="40dp"/>
+        android:layout_height="40dp"
+        android:contentDescription="@string/flag_here"
+        android:src="@color/colorAccent" />
+
     <TextView
         android:id="@+id/navigationTextView"
-        android:layout_width="wrap_content"
-        android:textSize="16dp"
-        android:text="Items of Row"
+        style="@style/TextViewDefault"
+        android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/items_of_row"
+        android:textSize="16sp" />
 
 </LinearLayout>

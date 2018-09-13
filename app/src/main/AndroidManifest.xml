@@ -15,7 +15,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".HomeActivity"
+            android:name=".views.home.HomeActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

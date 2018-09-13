@@ -12,4 +12,33 @@
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="TextViewDefault">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="MatchHeightMatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="MatchHeightWrapWidth">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="WrapHeightMatchWidth">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MatchHeightMatchWidthVertical" parent="MatchHeightMatchWidth">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapHeightMatchWidthVertical" parent="WrapHeightMatchWidth">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapHeightMatchWidthHorizontal" parent="WrapHeightMatchWidth">
+        <item name="android:orientation">horizontal</item>
+    </style>
 </resources>

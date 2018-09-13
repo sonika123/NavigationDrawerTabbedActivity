@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tabLayout.Tab2">
+    tools:context=".views.tab2.Tab2Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="hello tab 2 here!!"
+        style="@style/MatchHeightMatchWidth"
+        android:text="@string/hello_tab_2_here"
         android:gravity="center_vertical"/>
 
 </FrameLayout>

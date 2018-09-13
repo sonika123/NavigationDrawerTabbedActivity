@@ -14,7 +14,7 @@ import android.graphics.BitmapFactory
 import androidx.core.content.ContextCompat
 import java.net.HttpURLConnection
 import java.net.URL
-import com.example.sonika.pushnotificationapp.HomeActivity
+import com.example.sonika.pushnotificationapp.views.home.HomeActivity
 import com.example.sonika.pushnotificationapp.R
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
